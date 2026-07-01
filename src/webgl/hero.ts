@@ -29,7 +29,7 @@ interface HeroOptions {
   reducedMotion: boolean;
 }
 
-const PARTICLE_COUNT = 5200;
+const PARTICLE_COUNT = 2600;
 const RANGE = 7.0; // half-width of the flow domain in world units
 const GATE_X = -0.2; // where the filter gate sits
 
@@ -129,7 +129,7 @@ const particleFrag = /* glsl */ `
       col = mix(teal, emerald, vProgress);
     }
 
-    gl_FragColor = vec4(col * (0.7 + glow * 0.7), glow * vAlpha);
+    gl_FragColor = vec4(col * (0.62 + glow * 0.6), glow * vAlpha * 0.5);
   }
 `;
 

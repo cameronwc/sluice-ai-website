@@ -164,8 +164,8 @@ img, svg { display: block; }
 .hero.no-webgl .hero__fallback { display: block; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(180deg, rgba(11,12,14,0.2) 0%, transparent 30%, rgba(11,12,14,0.55) 100%),
-              radial-gradient(70% 60% at 20% 50%, rgba(11,12,14,0.65), transparent 70%);
+  background: linear-gradient(90deg, rgba(11,12,14,0.94) 0%, rgba(11,12,14,0.82) 34%, rgba(11,12,14,0.35) 62%, rgba(11,12,14,0.05) 100%),
+              linear-gradient(180deg, rgba(11,12,14,0.35) 0%, transparent 28%, rgba(11,12,14,0.55) 100%);
 }
 .hero__inner { position: relative; z-index: 2; max-width: var(--maxw); margin: 0 auto; width: 100%; }
 .pill {
