@@ -1,2 +1,7 @@
+# Single-package repo. `packages` must be present (pnpm 11 errors on a missing/empty
+# packages field, e.g. `pnpm store path` in the CI cache step). allowBuilds approves
+# esbuild's postinstall so the non-interactive CI install doesn't fail the gate.
+packages:
+  - "."
 allowBuilds:
   esbuild: true
